@@ -1,0 +1,19 @@
+﻿<Window x:Name="MainMenuWindow" x:Class="KeyboardWriting.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyboardWriting"
+        mc:Ignorable="d"
+        Title="Keyboard Writing" Height="100" Width="600" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid x:Name="MainMenuGrid" Margin="5, 5, 5, 5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="33*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="LearningModeButton" Grid.Column="0" Content="Режим навчання" FontFamily="Cascadia Code SemiBold" FontSize="16" Click="LearningModeButton_Click"/>
+        <Button x:Name="AuthModeButton" Grid.Column="1" Content="Режим автентифікації" FontFamily="Cascadia Code SemiBold" FontSize="14" Click="AuthModeButton_Click"/>
+        <Button x:Name="ExitButton" Grid.Column="2" Content="Вихід з програми" FontFamily="Cascadia Code SemiBold" Click="ExitButton_Click" FontSize="15"/>
+    </Grid>
+</Window>
